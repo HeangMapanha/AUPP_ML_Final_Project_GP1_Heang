@@ -1,4 +1,5 @@
 dataset/
+model/
 .pth 
 .pt 
 .exe
