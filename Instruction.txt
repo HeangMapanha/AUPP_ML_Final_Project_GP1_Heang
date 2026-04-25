@@ -1,3 +1,20 @@
+--> Train
+
+-Put your class inside the dataset folders 
+example: dataset/glass/.imgs
+
+-run train.ipynb
+Model will be save in model folder
+
+-if u train more than one model, don't forget the rename
+the previous one
+
+--> Local device test
+Run the test.py
+
+
+--> Running the server 
+open 2 cmd and direct it to the folders
 # Terminal 1 — Start FastAPI
 cd model
 pip install fastapi uvicorn joblib opencv-python 
@@ -7,5 +24,3 @@ uvicorn API:app --port 8000
 cd server
 npm install express axios 
 node server.js
-
-Note: install once
