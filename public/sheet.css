@@ -1,0 +1,39 @@
+
+body {
+    background-color: rgb(38, 35, 35);
+}
+#divVideo {
+    
+    margin-bottom: 30px;
+    display: flex;
+    
+    justify-content: center;
+}
+
+#video {
+    background-color: white;
+    border: 5px outset yellow;
+    width: 50vw;
+    max-width: 500px;
+    height:auto;
+    display: block;
+}
+
+#canvas {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+button {
+    padding: 10px 15px;
+    display: inline-block
+    
+}
+
+#divButton {
+    text-align: center;
+}
