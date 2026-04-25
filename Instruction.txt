@@ -1,0 +1,11 @@
+# Terminal 1 — Start FastAPI
+cd model
+pip install fastapi uvicorn joblib opencv-python 
+uvicorn API:app --port 8000
+
+# Terminal 2 — Start Node.js
+cd server
+npm install express axios 
+node server.js
+
+Note: install once
