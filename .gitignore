@@ -1,6 +1,6 @@
-junkcode/
+classes.pkl
+classifier.pkl
 dataset/
-model/
 .pth 
 .pt 
 .exe
