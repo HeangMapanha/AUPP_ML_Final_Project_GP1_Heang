@@ -1,7 +1,8 @@
 # AUPP_ML_Final_Project_GP1_Heang
 ML Project
 
+Please download the Dataset from https://huggingface.co/datasets/garythung/trashnet and https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2
 
-Please download the Dataset from https://huggingface.co/datasets/garythung/trashnet
+Put the Kaggle dataset inside the trash class.
 
-Extract the zip and move the dataset_original with the train.py and rename the folder to "dataset". The dataset should have folders with with their labels on them. Finally delete the .DS_STORE.
+
