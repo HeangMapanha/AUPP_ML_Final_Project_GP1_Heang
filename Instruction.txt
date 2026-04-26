@@ -8,19 +8,21 @@ Model will be save in model folder
 
 -if u train more than one model, don't forget the rename
 the previous one
+=classes.pkl 
+=classifier.pkl
 
 --> Local device test
 Run the test.py
 
 
---> Running the server 
-open 2 cmd and direct it to the folders
+--> Running the server API
+open 3 cmd and direct it to the folders
 # Terminal 1 — Start FastAPI
 cd model
 pip install fastapi uvicorn joblib opencv-python 
 uvicorn API:app --host 0.0.0.0 --port 8000
 
-# Terminal 2 — Start Node.js
+# Terminal 2 — Start Node.js server
 cd server
 npm install express axios 
 node server.js
@@ -32,3 +34,5 @@ npm install -g ngrok
 (Sign up in ngrok and get your token)
 ngrok config add-authtoken YOUR_TOKEN_HERE
 ngrok http 4000
+
+use the Link ngrok gave you, copy and paste the link and the web browser

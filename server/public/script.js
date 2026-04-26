@@ -80,23 +80,19 @@ async function captureAndSend() {
     // Convert to base64 image — compressed to 50% quality
     const imageData = canvas.toDataURL("image/jpeg", 0.5);
 
-    try {
-        // Send to your Node.js backend
-        const response = await fetch("/detect", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ image: imageData })
-        });
-
-        const data = await response.json();
-
-        // Show result
-        result.textContent = `${data.result} — ${data.confidence}%`;
-
-    } catch (err) {
-        console.error("Detection error", err);
-        result.textContent = "Detection failed";
-    }
+try {
+    const response = await fetch("/detect", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ image: imageData })
+    });
+    const data = await response.json();
+    console.log("Response:", data);
+    result.textContent = `${data.result} — ${data.confidence ?? data.message}`;
+} catch (err) {
+    console.error("Detection error", err);
+    result.textContent = "Detection failed";
+}
 }
 
 buttoncamera.addEventListener("click",() => {
