@@ -15,21 +15,23 @@ body {
     border: 5px outset yellow;
     width: 50vw;
     max-width: 500px;
-
-#result {
-    font-color: white;
-}
     height:auto;
     display: block;
 }
 
+#result {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
 #canvas {
     display: none;
 }
 
 h1 {
     text-align: center;
-    font-color: yellow;
+    color: yellow;
 }
 
 button {
